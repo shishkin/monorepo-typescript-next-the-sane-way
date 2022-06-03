@@ -1,5 +1,5 @@
-import React from 'react';
-import * as Calc from '../../shared/utils/calc';
+import React from "react";
+import * as Calc from "@local/shared";
 
 const HomePage = () => {
   return (

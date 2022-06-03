@@ -1,3 +1,3 @@
-const withTM = require('next-transpile-modules')(['shared']);
+import withTM from "next-transpile-modules";
 
-module.exports = withTM({});
+export default withTM(["@local/shared"])({});

@@ -1,16 +1,19 @@
 {
-  "name": "shared",
+  "name": "@local/shared",
   "version": "1.0.0",
   "description": "",
-  "main": "utils/calc.ts",
+  "main": "src/index.ts",
   "private": true,
+  "type": "module",
   "author": "Pierre de la Martinière <pierre.de.la.martiniere@gmail.com>",
   "scripts": {
-    "test:unit": "jest"
+    "compile": "npx tsc -b",
+    "test:unit": "NODE_OPTIONS=\"--experimental-vm-modules\" jest"
   },
   "devDependencies": {
-    "@types/jest": "26.0.23",
-    "jest": "26.6.3",
-    "ts-jest": "26.5.5"
+    "@types/jest": "28.1.0",
+    "jest": "28.1.0",
+    "ts-jest": "28.0.4",
+    "typescript": "4.7.3"
   }
 }

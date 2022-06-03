@@ -1,10 +1,12 @@
 {
-  "name": "website",
+  "name": "@local/website",
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "type": "module",
   "author": "Pierre de la Martinière <pierre.de.la.martiniere@gmail.com>",
   "scripts": {
+    "compile": "npx tsc -b",
     "dev": "next",
     "build": "next build",
     "start": "next start",
@@ -12,19 +14,19 @@
     "test:lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.1",
+    "@local/shared": "1.0.0",
+    "next": "12.1.6",
     "next-transpile-modules": "9.0.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "shared": "1.0.0"
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
-    "@types/jest": "27.0.2",
+    "@types/jest": "28.1.0",
     "@types/next": "9.0.0",
-    "@types/react": "17.0.33",
-    "eslint": "7.32.0",
-    "eslint-config-next": "^12.0.1",
-    "jest": "27.3.1",
-    "typescript": "4.4.4"
+    "@types/react": "18.0.10",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "jest": "28.1.0",
+    "typescript": "4.7.3"
   }
 }
